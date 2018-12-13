@@ -14,6 +14,9 @@ a list of minions that are trusted to only allow the alternate id
 of the instances to specific hosts.  There is no glob matching at
 this time.
 
+  Note: If using `use_grain: True` minion must have `metadata_server_grains: True` set
+  in minion config file.
+
 The optional 'tag_list_key' indicates which keys should be added to
 'ec2_tags_list' and be split by tag_list_sep (default `;`). If a tag key is
 included in 'tag_list_key' it is removed from ec2_tags. If a tag does not
